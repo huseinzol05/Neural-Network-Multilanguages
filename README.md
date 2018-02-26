@@ -24,4 +24,4 @@ Feed-forward Neural Network will train using Iris dataset.
 
 ## Authors
 
-* **Husein Zolkepli** - *Initial work* - [PurpleBooth](https://github.com/huseinzol05)
+* **Husein Zolkepli** - *Initial work* - [huseinzol05](https://github.com/huseinzol05)
