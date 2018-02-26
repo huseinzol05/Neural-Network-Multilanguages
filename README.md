@@ -25,6 +25,9 @@ Feed-forward Neural Network will train using Iris dataset.
 
 Will update overtime.
 
+## Warning
+
+You would not see high accuracy for other languages beside Python even you implemented mini-batch or stochastic learning because float variables become saturated or addition / minus is too small.
 
 ## Authors
 
