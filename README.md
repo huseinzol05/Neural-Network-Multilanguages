@@ -3,8 +3,7 @@ implement Feed-forward and Recurrent Neural Network on different languages.
 
 Feed-forward Neural Network will train using Iris dataset.
 
-### *All instructions inside the folders.*
-### *Will update overtime.*
+## Support
 
 - [x] Ruby
 - [x] Python
@@ -16,7 +15,13 @@ Feed-forward Neural Network will train using Iris dataset.
 - [ ] Julia
 - [ ] PHP
 
+## Status
+
+*All instructions inside the folders.*
+
+*Will update overtime.*
+
+
 ## Authors
-```text
-Husein Zolkepli
-```
+
+* **Husein Zolkepli** - *Initial work* - [PurpleBooth](https://github.com/huseinzol05)
