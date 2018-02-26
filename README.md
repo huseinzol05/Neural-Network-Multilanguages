@@ -1,5 +1,5 @@
 # Neural-Network-Multilanguages
-implement Feed-forward and Recurrent Neural Network on different languages.
+implement Gradient Descent Feed-forward and Recurrent Neural Network on different languages.
 
 Feed-forward Neural Network will train using Iris dataset.
 

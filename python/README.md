@@ -3,39 +3,11 @@
 ```bash
 bash install.sh
 python3 feed-forward-iris-softmax-cross-entropy.py
+python3 vanilla-rnn-gradient-descent.py
 ```
 
+### results feed-forward
 ```text
-epoch 0, accuracy 0.350000, cost 0.656911
-epoch 1, accuracy 0.341667, cost 1.834073
-epoch 2, accuracy 0.308333, cost 3.114981
-epoch 3, accuracy 0.350000, cost 3.377698
-epoch 4, accuracy 0.308333, cost 0.633299
-epoch 5, accuracy 0.691667, cost 0.622091
-epoch 6, accuracy 0.566667, cost 0.618965
-epoch 7, accuracy 0.458333, cost 0.616203
-epoch 8, accuracy 0.500000, cost 0.613087
-epoch 9, accuracy 0.566667, cost 0.609445
-epoch 10, accuracy 0.608333, cost 0.605143
-epoch 11, accuracy 0.675000, cost 0.600024
-epoch 12, accuracy 0.683333, cost 0.593896
-epoch 13, accuracy 0.683333, cost 0.586508
-epoch 14, accuracy 0.691667, cost 0.577539
-epoch 15, accuracy 0.691667, cost 0.566599
-epoch 16, accuracy 0.691667, cost 0.553297
-epoch 17, accuracy 0.691667, cost 0.537389
-epoch 18, accuracy 0.691667, cost 0.518886
-epoch 19, accuracy 0.691667, cost 0.498092
-epoch 20, accuracy 0.691667, cost 0.475773
-epoch 21, accuracy 0.691667, cost 0.453268
-epoch 22, accuracy 0.691667, cost 0.431952
-epoch 23, accuracy 0.691667, cost 0.412542
-epoch 24, accuracy 0.700000, cost 0.395272
-epoch 25, accuracy 0.700000, cost 0.380061
-epoch 26, accuracy 0.725000, cost 0.366821
-epoch 27, accuracy 0.725000, cost 0.355286
-epoch 28, accuracy 0.725000, cost 0.345315
-epoch 29, accuracy 0.733333, cost 0.336567
 epoch 30, accuracy 0.750000, cost 0.328933
 epoch 31, accuracy 0.783333, cost 0.322089
 epoch 32, accuracy 0.808333, cost 0.315966
@@ -56,4 +28,28 @@ epoch 46, accuracy 0.958333, cost 0.245783
 epoch 47, accuracy 0.958333, cost 0.240328
 epoch 48, accuracy 0.933333, cost 0.235533
 epoch 49, accuracy 0.958333, cost 0.234271
+```
+
+### results recurrent
+```text
+epoch 50, loss 4.175321, accuracy 0.078125
+epoch 100, loss 3.883469, accuracy 0.158854
+epoch 150, loss 3.507442, accuracy 0.214844
+epoch 200, loss 3.388112, accuracy 0.273438
+epoch 250, loss 3.327744, accuracy 0.281250
+epoch 300, loss 3.042421, accuracy 0.315104
+epoch 350, loss 2.942040, accuracy 0.334635
+epoch 400, loss 3.002462, accuracy 0.294271
+epoch 450, loss 2.517064, accuracy 0.432292
+epoch 500, loss 2.653959, accuracy 0.401042
+epoch 550, loss 2.719194, accuracy 0.356771
+epoch 600, loss 2.386390, accuracy 0.444010
+epoch 650, loss 2.535589, accuracy 0.406250
+epoch 700, loss 2.578567, accuracy 0.399740
+epoch 750, loss 2.221211, accuracy 0.505208
+epoch 800, loss 2.231152, accuracy 0.490885
+epoch 850, loss 2.168349, accuracy 0.476562
+epoch 900, loss 2.021851, accuracy 0.532552
+epoch 950, loss 2.022622, accuracy 0.522135
+epoch 1000, loss 2.160469, accuracy 0.489583
 ```
