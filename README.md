@@ -7,7 +7,7 @@ Feed-forward Neural Network will train using Iris dataset.
 
 - [x] Ruby
 - [x] Python
-- [ ] Javascript
+- [x] Javascript
 - [ ] Go
 - [ ] C++
 - [ ] Java
@@ -15,11 +15,15 @@ Feed-forward Neural Network will train using Iris dataset.
 - [ ] Julia
 - [ ] PHP
 
+## Instructions
+
+1. Go to any language folder.
+2. run install.sh
+3. run the program.
+
 ## Status
 
-*All instructions inside the folders.*
-
-*Will update overtime.*
+Will update overtime.
 
 
 ## Authors
