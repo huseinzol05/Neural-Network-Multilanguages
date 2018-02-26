@@ -3,8 +3,8 @@ implement Feed-forward and Recurrent Neural Network on different languages.
 
 Feed-forward Neural Network will train using Iris dataset.
 
-### *All instructions inside the folders*
-### *Will update overtime*
+### *All instructions inside the folders.*
+### *Will update overtime.*
 
 - [x] Ruby
 - [x] Python
