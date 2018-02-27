@@ -7,7 +7,7 @@ implement Gradient Descent Feed-forward and Recurrent Neural Network on differen
 - [x] Python
 - [x] Javascript
 - [x] Go
-- [ ] C++
+- [x] C++
 - [ ] Java
 - [ ] Scala
 - [ ] Julia
