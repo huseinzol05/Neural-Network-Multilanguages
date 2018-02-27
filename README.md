@@ -1,14 +1,12 @@
 # Neural-Network-Multilanguages
 implement Gradient Descent Feed-forward and Recurrent Neural Network on different languages.
 
-Feed-forward Neural Network will train using Iris dataset.
-
 ## Support
 
 - [x] Ruby
 - [x] Python
 - [x] Javascript
-- [ ] Go
+- [x] Go
 - [ ] C++
 - [ ] Java
 - [ ] Scala
@@ -20,6 +18,20 @@ Feed-forward Neural Network will train using Iris dataset.
 1. Go to any language folder.
 2. run install.sh
 3. run the program.
+
+## Neural Network Architectures
+
+1. Feed-forward Neural Network
+  * 3 layers included input and output layer
+  * first 2 layers squashed into sigmoid function
+  * last layer squashed into softmax function
+  * loss function is cross-entropy
+
+2. Vanilla Recurrent Neural Network
+  * 1 hidden layer
+  * tanh as activation function
+  * softmax and cross entropy combination for derivative
+  * sequence length = 15
 
 ## Status
 
