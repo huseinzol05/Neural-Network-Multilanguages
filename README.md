@@ -33,6 +33,8 @@ implement Gradient Descent Feed-forward and Recurrent Neural Network on differen
   * softmax and cross entropy combination for derivative
   * sequence length = 15
 
+All implemention like max(), mean(), softmax(), cross_entropy(), sigmoid() are hand-coded, no other libraries.
+
 ## Status
 
 Will update overtime.
