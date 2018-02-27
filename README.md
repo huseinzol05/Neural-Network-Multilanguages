@@ -1,5 +1,5 @@
 # Neural-Network-Multilanguages
-implement Gradient Descent Feed-forward and Recurrent Neural Network on different languages.
+implement Gradient Descent Feed-forward and Recurrent Neural Network on different languages, only use vector / linear algebra library.
 
 ## Support
 
