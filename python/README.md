@@ -3,7 +3,7 @@
 ```bash
 bash install.sh
 python3 feed-forward-iris-softmax-cross-entropy.py
-python3 vanilla-rnn-gradient-descent.py
+python3 rnn-generator.py
 ```
 
 ### results feed-forward

@@ -3,6 +3,7 @@
 ```bash
 bash install.sh
 php feed-forward-iris-softmax-cross-entropy.php
+php rnn-forecasting.php
 ```
 
 ### results feed-forward

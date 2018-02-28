@@ -3,15 +3,40 @@ implement Gradient Descent Feed-forward and Recurrent Neural Network on differen
 
 ## Support
 
-- [x] Ruby
-- [x] Python
-- [x] Javascript
-- [x] Go
-- [x] C++
-- [ ] Java
-- [ ] Scala
-- [x] Julia
-- [x] PHP
+#### Ruby
+  - [x] feed-forward iris
+  - [ ] recurrent generator
+  - [ ] recurrent forecasting
+
+#### Python
+  - [x] feed-forward iris
+  - [x] recurrent generator
+  - [ ] recurrent forecasting
+
+#### Javascript
+  - [x] feed-forward iris
+  - [ ] recurrent generator
+  - [ ] recurrent forecasting
+
+#### Go
+  - [x] feed-forward iris
+  - [ ] recurrent generator
+  - [ ] recurrent forecasting
+
+#### C++
+  - [x] feed-forward iris
+  - [ ] recurrent generator
+  - [ ] recurrent forecasting
+
+#### Julia
+  - [x] feed-forward iris
+  - [ ] recurrent generator
+  - [ ] recurrent forecasting
+
+#### PHP
+  - [x] feed-forward iris
+  - [ ] recurrent generator
+  - [x] recurrent forecasting
 
 ## Instructions
 
@@ -21,25 +46,29 @@ implement Gradient Descent Feed-forward and Recurrent Neural Network on differen
 
 ## Neural Network Architectures
 
-1. Feed-forward Neural Network
+1. Feed-forward Neural Network to predict Iris dataset.
   * 3 layers included input and output layer
   * first 2 layers squashed into sigmoid function
   * last layer squashed into softmax function
   * loss function is cross-entropy
 
-2. Vanilla Recurrent Neural Network
+2. Vanilla Recurrent Neural Network to generate text.
   * 1 hidden layer
   * tanh as activation function
   * softmax and cross entropy combination for derivative
   * sequence length = 15
+
+3. Vanilla Recurrent Neural Network to predict TESLA market.
+  * 1 hidden layer
+  * tanh as activation function
+  * mean square error for derivative
+  * sequence length = 5
 
 All implemention like max(), mean(), softmax(), cross_entropy(), sigmoid() are hand-coded, no other libraries.
 
 ## Status
 
 Will update overtime.
-
-Java and Scala might be very late to update, because I need to find a good physical machine for IntelliJ.
 
 ## Warning
 
