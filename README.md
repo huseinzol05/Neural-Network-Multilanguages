@@ -11,7 +11,7 @@ implement Gradient Descent Feed-forward and Recurrent Neural Network on differen
 - [ ] Java
 - [ ] Scala
 - [ ] Julia
-- [ ] PHP
+- [x] PHP
 
 ## Instructions
 
@@ -38,6 +38,8 @@ All implemention like max(), mean(), softmax(), cross_entropy(), sigmoid() are h
 ## Status
 
 Will update overtime.
+
+Java and Scala might be very late to update, because I need to find a good physical machine for IntelliJ.
 
 ## Warning
 
