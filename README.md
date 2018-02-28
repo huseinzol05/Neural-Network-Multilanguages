@@ -10,7 +10,7 @@ implement Gradient Descent Feed-forward and Recurrent Neural Network on differen
 - [x] C++
 - [ ] Java
 - [ ] Scala
-- [ ] Julia
+- [x] Julia
 - [x] PHP
 
 ## Instructions
