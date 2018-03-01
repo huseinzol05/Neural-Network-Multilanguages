@@ -71,18 +71,55 @@ function getMean($array){
     return $sum / ($array->getM() * $array->getN());
 }
 
-function mean_square_error($x, $y, $grad){
-    if($grad){
-        $y = $y->subtract($x);
-        return $y->scalarMultiply(-2);
-    }
-    else{
-        $y = $y->subtract($x);
-        $y = $y->hadamardProduct($y);
-        return getMean($y);
-    }
+function getMaxColumn($m){
+    $array = $m->getMatrix();
+    $rows = $m->getM();
+    $columns = $m->getN();
+    $maxs = array();
+    for($i = 0; $i < $rows; $i++) array_push($maxs, getMax($array[$i]));
+    $array_max = array();
+    for($i = 0; $i < $columns; $i++) array_push($array_max, $maxs);
+    return MatrixFactory::create($array_max)->transpose();
 }
 
+function getSumColumn($m){
+    $array = $m->getMatrix();
+    $rows = $m->getM();
+    $columns = $m->getN();
+    $sums = array();
+    for($i = 0; $i < $rows; $i++) array_push($sums, getSum($array[$i]));
+    $array_sum = array();
+    for($i = 0; $i < $columns; $i++) array_push($array_sum, $sums);
+    return MatrixFactory::create($array_sum)->transpose();
+}
+
+function apply_function($m, $func){
+    $m = $m->getMatrix();
+    for($i = 0; $i < sizeof($m); $i++) for($k = 0; $k < sizeof($m[0]); $k++) $m[$i][$k] = $func($m[$i][$k]);
+    return MatrixFactory::create($m);
+}
+
+function divide($a, $b){
+    $a = $a->getMatrix();
+    for($i = 0; $i < sizeof($a); $i++) for($k = 0; $k < sizeof($a[0]); $k++) $a[$i][$k] /= $b[$i][$k];
+    return MatrixFactory::create($a);
+}
+
+function softmax($m, $grad){
+    if($grad){
+        $p = softmax($m,false);
+        $ones = MatrixFactory::one($p->getM(), $p->getN());
+        $ones = $ones->subtract($p);
+        return $p->hadamardProduct($ones);
+    }
+    else{
+        $max_columns = getMaxColumn($m);
+        $m = $m->subtract($max_columns);
+        $m = apply_function($m, exp);
+        $sum_columns = getSumColumn($m);
+        return divide($m, $sum_columns);
+    }
+}
 function our_tanh($m, $grad){
     if($grad){
         $m = $m->getMatrix();
@@ -149,19 +186,5 @@ function backward_recurrent($x, $prev_state, $U, $W, $V, $d_mul_v, $saved_graph)
     $dx = $backward_multiply_U[1];
     return array($dprev_state, $dU, $dW, $dV);
 }
-
-$close = array();
-$file = fopen("TESLA.csv","r");
-$i = 0;
-while(!feof($file)){
-    $temp = fgetcsv($file);
-    if($i > 0) array_push($close, $temp[4]);
-    $i++;
-}
-fclose($file);
-$close = array_slice($close,0,-1);
-$close_2d = MatrixFactory::create([$close]);
-$return_normalized_array = normalized($close_2d);
-$close_2d_normalized = $return_normalized_array[0];
 
 ?>

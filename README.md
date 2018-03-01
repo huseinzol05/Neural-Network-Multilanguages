@@ -1,6 +1,8 @@
 # Neural-Network-Multilanguages
 implement Gradient Descent Feed-forward and Recurrent Neural Network on different languages, only use vector / linear algebra library.
 
+Artificial Neural Network is relatively easy if you really understand it!
+
 ## Support
 
 #### Ruby
