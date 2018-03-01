@@ -37,7 +37,7 @@ Artificial Neural Network is relatively easy if you really understand it!
 
 #### PHP
   - [x] feed-forward iris
-  - [ ] recurrent generator
+  - [x] recurrent generator
   - [x] recurrent forecasting
 
 ## Instructions
