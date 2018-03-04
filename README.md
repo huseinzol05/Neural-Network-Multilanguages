@@ -13,7 +13,7 @@ Artificial Neural Network is relatively easy if you really understand it!
 #### Python
   - [x] feed-forward iris
   - [x] recurrent generator
-  - [ ] recurrent forecasting
+  - [x] recurrent forecasting
 
 #### Javascript
   - [x] feed-forward iris
@@ -22,7 +22,7 @@ Artificial Neural Network is relatively easy if you really understand it!
 
 #### Go
   - [x] feed-forward iris
-  - [ ] recurrent generator
+  - [x] recurrent generator
   - [ ] recurrent forecasting
 
 #### C++
